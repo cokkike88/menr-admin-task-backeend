@@ -8,3 +8,10 @@ npm install
 exit
 
 # 2. Run docker-compose
+docker-compose up -d
+
+
+
+# heroku 
+heroku create
+git push production master
