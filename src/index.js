@@ -10,6 +10,8 @@ app.get('/', (req, res) => {
     res.send('Hola mundo');
 });
 
-app.listen(config.port, () => {
+const port = process.env.PORT || config.port;
+
+app.listen(port, '0.0.0.0', () => {
     console.log(`Server run on port ${config.port}`);
 })
