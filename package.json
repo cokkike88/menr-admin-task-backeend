@@ -1,0 +1,31 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "docker run --name node-express -v $PWD:/api -e \"NODE_ENV=development\" -w \"/api\" -p 8002:8002 -u node -d -it node bash # Enter to container docker exec -it node-express bash npm install exit",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js --exec babel-node -e js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oscar M.",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.1",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/runtime": "^7.8.4"
+  }
+}
