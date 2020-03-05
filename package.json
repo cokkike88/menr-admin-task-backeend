@@ -22,7 +22,6 @@
     "nodemon": "^2.0.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/node": "^7.8.4",
     "@babel/plugin-transform-runtime": "^7.8.3",
